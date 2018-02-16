@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* .......styling the scrollbar....... */
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: linear-gradient(aqua, #0d161f);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 100px;
+    background-color: whitesmoke;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+
+/*......END of styling the scrollbar.....*/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/*........styling the body.........*/
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#Head {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 10000;
+    background-color: white;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .4);
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    float: left;
+    position: fixed;
+    cursor: pointer;
+    margin-left: 1%;
+}
+
+#Nav_bar {
+    height: 45px;
+    float: right;
+    margin: 15px 5% 0px 0px;
+}
+
+.Nav_bar_ul {
+    float: left;
+}
+
+.Nav_bar_ul_li {
+    display: inline;
+}
+
+.Nav_bar_ul_li a {
+    float: left;
+    display: inline-block;
+    padding: 0px 10px;
+    line-height: 30px;
+    transition: 250ms;
+    font-size: 12px;
+    color: #666;
+}
+
+.Nav_bar_ul_li a:hover {
+    color: orangered;
+    border-bottom: 2px solid orangered;
+}
+
+.Nav_bar_ul_li .active {
+    color: deepskyblue;
+    border-bottom: 2px solid deepskyblue;
+}
+
+.Nav_bar_ul_li .active:hover {
+    color: deepskyblue;
+    border-bottom: 2px solid orangered;
+}
+
+/*..............Navigation bar...........*/
+
+/**/
+
+/**/
+
+/**/
+
+/*.....Banner.....*/
+
+.Banner {
+    overflow: hidden;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: auto;
+    overflow: hidden;
+    position: relative;
+    z-index: -10;
+}
+
+.BannerBox {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/F.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.ArrowDownBox {
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    margin: auto;
+    position: relative;
+    top: 80%;
+}
+
+.ArrowDown {
+    width: 30px;
+    height: 30px;
+    border-bottom: 3px solid deepskyblue;
+    border-left: 3px solid deepskyblue;
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+    border-radius: 4px;
+    animation: Blink 1000ms linear infinite;
+}
+
+@keyframes Blink {
+    0% {
+        opacity: 1;
+        transform: scale(1) rotate(-45deg);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.2) rotate(-45deg);
+    }
+}
+
+/*........ End of banner section .......*/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/*....... Start of Section .....*/
+
+section {
+    margin: 0px;
+    padding: 0px;
+}
+
+.Home_Sec {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 1);
+
+    overflow: hidden;
+}
+
+.Home_Heading {
+    margin: 30px;
+    font-size: 3em;
+    color: #666;
+}
+
+.Main {
+    width: 630px;
+    height: auto;
+    margin: auto;
+}
+
+.Home_Image_Box {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    float: left;
+    border-radius: 50%;
+    margin: 10px;
+    border: 4px solid deepskyblue;
+    cursor: pointer;
+    transition: 1s;
+    overflow: hidden;
+    position: relative;
+}
+
+.Mini_Image_Box_hover {
+    width: 100%;
+    height: 0px;
+    background-color: rgba(0, 0, 0, .2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 600ms;
+    color: lightskyblue;
+}
+
+.Home_Image_Box:hover .Mini_Image_Box_hover {
+    height: 40%;
+    box-shadow: inset 0 0 200px rgba(0, 0, 0, .8);
+}
+
+.H_G_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: 600ms;
+}
+
+.Home_Image_Box:hover .H_G_img {
+    transform: scale(1.2);
+}
+
+.Slow {
+    animation-delay: 600ms;
+}
+
+/*....... End of section ........*/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/*............footer.........*/
+
+#Footer {
+    height: 100px;
+    width: 100%;
+    background-color: #0d161f;
+    clear: both;
+}
+
+/*....... End of footer ........*/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/*....... Adjust Screensize at 700px .......*/
+
+@media screen and (max-width:700px) {
+
+    /*..... Drop down menu ......*/
+    .menu {
+        height: 28px;
+        width: 33px;
+        cursor: pointer;
+        float: right;
+        display: block;
+        transition: 200ms;
+        border-radius: 5px;
+        margin: 6px;
+        padding: 10px;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #666;
+        border-radius: 20px;
+        margin: 4px;
+        display: block;
+        transition: 200ms;
+    }
+    .menu:hover {
+        background-color: whitesmoke;
+    }
+    .menu:hover .bar {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+    }
+
+    #Nav_bar {
+        width: 100%;
+        margin: 0px;
+        height: 100%;
+    }
+    header nav .Nav_bar_ul {
+        overflow: hidden;
+        background-color: white;
+        height: 0px;
+        background-image: url(../images/29562364d9d4c4f.jpg);
+        background-size: cover;
+    }
+    header nav .Nav_bar_ul.open {
+        height: auto;
+        width: 100%;
+    }
+    header nav .Nav_bar_ul .Nav_bar_ul_li {
+        text-align: left;
+        width: 100%;
+        margin: 0px;
+        display: block;
+        clear: both;
+    }
+    header nav .Nav_bar_ul .Nav_bar_ul_li a {
+        margin: 0px;
+        display: block;
+        padding: 5px;
+        width: 100%;
+        transition: 250ms;
+        color: #fff;
+        border-bottom: 2px solid rgba(255, 255, 255, .05);
+    }
+
+    header nav .Nav_bar_ul .Nav_bar_ul_li a:hover {
+        color: deepskyblue;
+        border-bottom: 2px solid deepskyblue;
+    }
+    /*...... End of drop down menu .......*/
+    /*section content*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:650px) {
+    .Main {
+        width: 420px;
+        height: auto;
+        margin: auto;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:420px) {
+    .Main {
+        width: 360px;
+        height: auto;
+        margin: auto;
+    }
+    .Home_Image_Box {
+        width: 150px;
+        height: 150px;
+    }
+    .Home_Image_Box:hover .Mini_Image_Box_hover {
+        height: 65%;
+        box-shadow: inset 0 0 200px rgba(0, 0, 0, .8);
+    }
+    .Mini_Image_Box_hover h1 {
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:350px) {
+    .Main {
+        width: 260px;
+        height: auto;
+        margin: auto;
+    }
+    .Home_Image_Box {
+        width: 100px;
+        height: 100px;
+    }
+}
